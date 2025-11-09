@@ -1,0 +1,32 @@
+{
+  "name": "api-express",
+  "version": "0.0.1",
+  "description": "A simple Node/Express API to put into practice what I've been learning.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Igor-Willas/API-Express-1.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "api",
+    "rest",
+    "backend",
+    "javascript",
+    "learning"
+  ],
+  "author": "Igor Willas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Igor-Willas/API-Express-1/issues"
+  },
+  "homepage": "https://github.com/Igor-Willas/API-Express-1#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
