@@ -1,5 +1,5 @@
 import express from "express";
-import {getAllProducts, getProductById} from "./models/productModel.js";
+import { createProduct, getAllProducts, getProductById } from "./models/productModel.js";
 
 const app = express();
 
@@ -12,8 +12,13 @@ app.get("/products", (req, res) => {
 });
 
 app.get("/products/:id", (req, res) => {
-    const id = Number(req.params.id);
+  const id = Number(req.params.id);
   res.status(200).json(getProductById(id));
+});
+
+app.post("/products", (req, res) => {
+  const { id, name, price } = req.body;
+  res.status(201).json(createProduct(id, name, price));
 });
 
 export default app;
